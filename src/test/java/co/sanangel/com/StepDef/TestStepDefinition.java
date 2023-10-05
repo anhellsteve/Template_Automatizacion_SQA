@@ -9,7 +9,6 @@ import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
 public class TestStepDefinition {
-
     @Managed(driver="chrome")
     private WebDriver browser;
     private Actor user = Actor.named("user");
@@ -20,17 +19,22 @@ public class TestStepDefinition {
     }
 
     @Dado("que el usuario abra la url en el navegador")
-    public void queElUsuarioAbraLaUrlEnElNavegador() {
+    public void abrirUrl() {
         user.wasAbleTo(
                 Open.url("https://sanangel.com.co/")
         );
     }
     @Cuando("el usuario seleccione una categoria")
-    public void elUsuarioSeleccioneUnaCategoria() {
+    public void elegirCategoria() {
 
     }
     @Cuando("el usuario seleccione un producto sus cantidades y lo agregue al carrito")
-    public void elUsuarioSeleccioneUnProductoSusCantidadesYLoAgregueAlCarrito() {
+    public void elegirProducto() {
+
+    }
+
+    @Entonces("podra ver boton para realizar el pedido")
+    public void verPedido() {
 
     }
 }

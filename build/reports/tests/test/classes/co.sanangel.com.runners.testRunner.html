@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - testRunner</title>
+<title>Test results - TestRunner</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>testRunner</h1>
+<h1>TestRunner</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/co.sanangel.com.runners.html">co.sanangel.com.runners</a> &gt; testRunner</div>
+<a href="../packages/co.sanangel.com.runners.html">co.sanangel.com.runners</a> &gt; TestRunner</div>
 <div id="summary">
 <table>
 <tr>
@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">37.110s</div>
+<div class="counter">0.962s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,16 +61,53 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
 </li>
 <li>
-<a href="#tab2">Standard error</a>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Agregar productos al carrito de forma exitosa"></a>
+<h3 class="failures">Agregar productos al carrito de forma exitosa</h3>
+<span class="code">
+<pre>io.cucumber.junit.UndefinedStepException: The step 'que el usuario abra la url en el navegador' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Dado(&quot;que el usuario abra la url en el navegador&quot;)
+public void queElUsuarioAbraLaUrlEnElNavegador() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Cuando(&quot;el usuario seleccione una categoria&quot;)
+public void elUsuarioSeleccioneUnaCategoria() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Cuando(&quot;el usuario seleccione un producto sus cantidades y lo agregue al carrito&quot;)
+public void elUsuarioSeleccioneUnProductoSusCantidadesYLoAgregueAlCarrito() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Entonces(&quot;podra ver boton para realizar el pedido&quot;)
+public void podraVerBotonParaRealizarElPedido() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -81,27 +118,28 @@
 </tr>
 </thead>
 <tr>
-<td class="success">Agregar productos al carrito de forma exitosa</td>
-<td class="success">37.110s</td>
-<td class="success">passed</td>
+<td class="failures">Agregar productos al carrito de forma exitosa</td>
+<td class="failures">0.962s</td>
+<td class="failures">failed</td>
 </tr>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
 <pre>
-Escenario: Agregar productos al carrito de forma exitosa                     ?[90m# src/test/resources/features/tes.feature:4?[0m
-  ?[32mDado ?[0m?[32mque el usuario abra la url en el navegador?[0m                            ?[90m# co.sanangel.com.StepDef.TestStepDefinition.queElUsuarioAbraLaUrlEnElNavegador()?[0m
-  ?[32mCuando ?[0m?[32mel usuario seleccione una categoria?[0m                                 ?[90m# co.sanangel.com.StepDef.TestStepDefinition.elUsuarioSeleccioneUnaCategoria()?[0m
-  ?[32mY ?[0m?[32mel usuario seleccione un producto sus cantidades y lo agregue al carrito?[0m ?[90m# co.sanangel.com.StepDef.TestStepDefinition.elUsuarioSeleccioneUnProductoSusCantidadesYLoAgregueAlCarrito()?[0m
+Escenario: Agregar productos al carrito de forma exitosa                     ?[90m# src/test/resources/features/Test.feature:4?[0m
+  ?[33mDado ?[0m?[33mque el usuario abra la url en el navegador?[0m
+  ?[36mCuando ?[0m?[36mel usuario seleccione una categoria?[0m
+  ?[36mY ?[0m?[36mel usuario seleccione un producto sus cantidades y lo agregue al carrito?[0m
+  ?[36mEntonces ?[0m?[36mpodra ver boton para realizar el pedido?[0m
 </pre>
 </span>
 </div>
-<div id="tab2" class="tab">
+<div id="tab3" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///D:/Dev%20Tools/IdeaProjects/Template_Automatizacion_SQA/src/test/resources/features/tes.feature
+<pre>[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///D:/Dev%20Tools/IdeaProjects/Template_Automatizacion_SQA/src/test/resources/features/Test.feature
 [Test worker] INFO  - 
 
 -------------------------------------------------------------------------------------
@@ -119,9 +157,9 @@ Escenario: Agregar productos al carrito de forma exitosa                     ?[9
 -------------------------------------------------------------------------------------
 
 [Test worker] INFO  - Test Suite Started: Agregar productos al carrito
-[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///D:/Dev%20Tools/IdeaProjects/Template_Automatizacion_SQA/src/test/resources/features/tes.feature
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///D:/Dev%20Tools/IdeaProjects/Template_Automatizacion_SQA/src/test/resources/features/Test.feature
 [Test worker] INFO  - Test Suite Started: Agregar productos al carrito
-[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///D:/Dev%20Tools/IdeaProjects/Template_Automatizacion_SQA/src/test/resources/features/tes.feature
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///D:/Dev%20Tools/IdeaProjects/Template_Automatizacion_SQA/src/test/resources/features/Test.feature
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
@@ -130,30 +168,14 @@ Escenario: Agregar productos al carrito de forma exitosa                     ?[9
 
 Agregar productos al carrito de forma exitosa(agregar-productos-al-carrito;agregar-productos-al-carrito-de-forma-exitosa)
 --------------------------------------------------------------------------------
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
-[Test worker] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117
-[Test worker] WARN io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117)
-[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\dante\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
-Starting ChromeDriver 117.0.5938.92 (67649b10b92bb182fba357831ef7dd6a1baa5648-refs/branch-heads/5938_62@{#14}) on port 57549
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-oct. 04, 2023 12:57:22 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-oct. 04, 2023 12:57:23 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: a no-op implementation
-oct. 04, 2023 12:57:23 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFO: Unable to find CDP implementation matching 117.
-oct. 04, 2023 12:57:23 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
-WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [Test worker] INFO  - 
-  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
- |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
-   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+  _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
+ |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
+   | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
+   |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
 
 Agregar productos al carrito de forma exitosa
-----------------------------------------------------------------------
+-----------------------------------------------------------------------------
 </pre>
 </span>
 </div>
@@ -165,7 +187,7 @@ Agregar productos al carrito de forma exitosa
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.8</a> at 4/10/2023, 12:57:38 p. m.</p>
+<a href="http://www.gradle.org">Gradle 6.8</a> at 5/10/2023, 10:43:46 a. m.</p>
 </div>
 </div>
 </body>
