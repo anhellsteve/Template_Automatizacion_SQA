@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.sanangel.com.runners.TestRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-07T02:38:43" hostname="LAPTOP-K0NSPKG3" time="35.596">
+<testsuite name="co.sanangel.com.runners.TestRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-07T23:40:10" hostname="LAPTOP-K0NSPKG3" time="42.411">
   <properties/>
-  <testcase name="Agregar productos al carrito de forma exitosa" classname="co.sanangel.com.runners.TestRunner" time="35.596"/>
+  <testcase name="Agregar productos al carrito de forma exitosa" classname="co.sanangel.com.runners.TestRunner" time="42.411"/>
   <system-out><![CDATA[
 Escenario: Agregar productos al carrito de forma exitosa                     ?[90m# src/test/resources/features/Test.feature:4?[0m
   ?[32mDado ?[0m?[32mque el usuario abra la url en el navegador?[0m                            ?[90m# co.sanangel.com.StepDef.TestStepDefinition.abrirUrl()?[0m
@@ -42,17 +42,17 @@ Agregar productos al carrito de forma exitosa(agregar-productos-al-carrito;agreg
 [Test worker] ERROR io.github.bonigarcia.wdm.online.HttpClient - Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117
 [Test worker] WARN io.github.bonigarcia.wdm.versions.VersionDetector - Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_117)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\dante\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe
-Starting ChromeDriver 117.0.5938.92 (67649b10b92bb182fba357831ef7dd6a1baa5648-refs/branch-heads/5938_62@{#14}) on port 61773
+Starting ChromeDriver 117.0.5938.92 (67649b10b92bb182fba357831ef7dd6a1baa5648-refs/branch-heads/5938_62@{#14}) on port 59916
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-oct. 06, 2023 9:39:01 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+oct. 07, 2023 6:40:23 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-oct. 06, 2023 9:39:01 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+oct. 07, 2023 6:40:23 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: a no-op implementation
-oct. 06, 2023 9:39:01 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+oct. 07, 2023 6:40:23 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Unable to find CDP implementation matching 117.
-oct. 06, 2023 9:39:01 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+oct. 07, 2023 6:40:23 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  

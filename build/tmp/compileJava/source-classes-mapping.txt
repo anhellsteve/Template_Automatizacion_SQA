@@ -2,7 +2,11 @@ task/PaginaIncioTask.java
  task.PaginaIncioTask
 ui/PaginaInicioUI.java
  ui.PaginaInicioUI
-ui/PaginaProductosUI.java
- ui.PaginaProductosUI
+ui/PaginaCantidadProductoUI.java
+ ui.PaginaCantidadProductoUI
 task/PaginaProductosTask.java
  task.PaginaProductosTask
+ui/PaginaProductosUI.java
+ ui.PaginaProductosUI
+task/PaginaCantidadProductoTask.java
+ task.PaginaCantidadProductoTask

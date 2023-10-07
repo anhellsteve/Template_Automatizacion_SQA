@@ -7,6 +7,7 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+import task.PaginaCantidadProductoTask;
 import task.PaginaIncioTask;
 import task.PaginaProductosTask;
 
@@ -35,7 +36,8 @@ public class TestStepDefinition {
     @Cuando("el usuario seleccione un producto sus cantidades y lo agregue al carrito")
     public void elegirProducto() {
         user.attemptsTo(
-                PaginaProductosTask.paginaProductosTask()
+                PaginaProductosTask.paginaProductosTask(),
+                PaginaCantidadProductoTask.paginaCantidadProductoTask()
         );
     }
 
