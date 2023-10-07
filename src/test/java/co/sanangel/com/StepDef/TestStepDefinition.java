@@ -7,6 +7,8 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
+import task.PaginaIncioTask;
+import task.PaginaProductosTask;
 
 public class TestStepDefinition {
     @Managed(driver="chrome")
@@ -26,11 +28,15 @@ public class TestStepDefinition {
     }
     @Cuando("el usuario seleccione una categoria")
     public void elegirCategoria() {
-
+        user.attemptsTo(
+                PaginaIncioTask.paginaIncioTask()
+        );
     }
     @Cuando("el usuario seleccione un producto sus cantidades y lo agregue al carrito")
     public void elegirProducto() {
-
+        user.attemptsTo(
+                PaginaProductosTask.paginaProductosTask()
+        );
     }
 
     @Entonces("podra ver boton para realizar el pedido")
