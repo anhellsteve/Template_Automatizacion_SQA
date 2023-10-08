@@ -1,12 +1,16 @@
-task/PaginaIncioTask.java
- task.PaginaIncioTask
-ui/PaginaInicioUI.java
- ui.PaginaInicioUI
-ui/PaginaCantidadProductoUI.java
- ui.PaginaCantidadProductoUI
-task/PaginaProductosTask.java
- task.PaginaProductosTask
-ui/PaginaProductosUI.java
- ui.PaginaProductosUI
-task/PaginaCantidadProductoTask.java
- task.PaginaCantidadProductoTask
+co/sanangel/com/ui/ValidarProductoUI.java
+ co.sanangel.com.ui.ValidarProductoUI
+co/sanangel/com/task/PaginaProductosTask.java
+ co.sanangel.com.task.PaginaProductosTask
+co/sanangel/com/task/PaginaCantidadProductoTask.java
+ co.sanangel.com.task.PaginaCantidadProductoTask
+co/sanangel/com/ui/PaginaCantidadProductoUI.java
+ co.sanangel.com.ui.PaginaCantidadProductoUI
+co/sanangel/com/ui/PaginaProductosUI.java
+ co.sanangel.com.ui.PaginaProductosUI
+co/sanangel/com/ui/PaginaInicioUI.java
+ co.sanangel.com.ui.PaginaInicioUI
+co/sanangel/com/questions/ValidarProductoQuestion.java
+ co.sanangel.com.questions.ValidarProductoQuestion
+co/sanangel/com/task/PaginaIncioTask.java
+ co.sanangel.com.task.PaginaIncioTask
