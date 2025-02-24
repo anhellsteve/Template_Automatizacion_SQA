@@ -1,4 +1,4 @@
-package co.sanangel.com.StepDef;
+package co.sanangel.com.StepDefinition;
 
 import co.sanangel.com.questions.ValidarProductoQuestion;
 import io.cucumber.java.Before;
